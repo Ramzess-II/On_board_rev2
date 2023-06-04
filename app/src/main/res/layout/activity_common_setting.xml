@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".common_setting">
+  <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="МАХ вага авто:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMaxAuto"
+        app:layout_constraintEnd_toStartOf="@id/editTextMaxAuto"
+        app:layout_constraintTop_toTopOf="@+id/editTextMaxAuto" />
+
+  <EditText
+      android:id="@+id/editTextMaxAuto"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="@color/blue"
+      android:ems="10"
+      android:hint="Кг"
+      android:inputType="date"
+      android:maxLength="10"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Дискрета:"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="@+id/editTextDisrt"
+      app:layout_constraintStart_toStartOf="@+id/textView11"
+      app:layout_constraintTop_toTopOf="@+id/editTextDisrt" />
+
+  <EditText
+      android:id="@+id/editTextDisrt"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="@color/blue"
+      android:ems="10"
+      android:hint="10-20-50-100"
+      android:inputType="date"
+      android:maxLength="3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextMaxAuto" />
+
+  <TextView
+      android:id="@+id/textView10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="date"
+      android:text="Фильтр:"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="@+id/editTextFiltr"
+      app:layout_constraintStart_toStartOf="@+id/textView13"
+      app:layout_constraintTop_toTopOf="@+id/editTextFiltr" />
+
+  <EditText
+      android:id="@+id/editTextFiltr"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="@color/blue"
+      android:ems="10"
+      android:hint="1-40"
+      android:inputType="date"
+      android:maxLength="2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextDisrt" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Тара:"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="@+id/editText_Tara"
+      app:layout_constraintStart_toStartOf="@+id/textView10"
+      app:layout_constraintTop_toTopOf="@+id/editText_Tara" />
+
+  <EditText
+      android:id="@+id/editText_Tara"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="@color/blue"
+      android:ems="10"
+      android:hint="Кг"
+      android:inputType="date"
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextFiltr" />
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/bottom_navigation"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
+      android:background="@color/grey"
+      android:foregroundGravity="center"
+      app:itemIconSize="40dp"
+      app:itemIconTint="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:menu="@menu/down_menu"
+      tools:ignore="MissingConstraints" />
+
+  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="Поточна тара:"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="@+id/textView6"
+      app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+  <TextView
+      android:id="@+id/tara_read"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="4dp"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="@+id/textView5"
+      app:layout_constraintStart_toStartOf="@+id/editText_Tara"
+      app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

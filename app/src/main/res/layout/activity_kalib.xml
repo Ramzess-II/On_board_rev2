@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalibActivity">
+
+    <Switch
+        android:id="@+id/switchkoef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:onClick="switchh"
+        android:text="Вага"
+        android:textSize="18sp"
+        android:thumbTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@id/textViewMass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMass" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вага:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMassa"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/editTextMassa" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Коєфіціент:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/editTextKoef"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/editTextKoef" />
+
+    <TextView
+        android:id="@+id/textViewMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:text="-------   T"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMaxAxis" />
+
+    <EditText
+        android:id="@+id/editTextMassa"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Кг"
+        android:inputType="date"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextKoef"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="1.00"
+        android:inputType="date"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMassa" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchkoef">
+
+        <Button
+            android:id="@+id/button_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_button"
+            android:text="@string/chevrons1"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_read"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_button"
+            android:text="Прочитати"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonkalib"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/new_button"
+        android:text="Калібрувати"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="МАХ вага вісі:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMaxAxis"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMaxAxis"
+        app:layout_constraintTop_toTopOf="@+id/editTextMaxAxis" />
+
+    <EditText
+        android:id="@+id/editTextMaxAxis"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Кг"
+        android:inputType="date"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKoef" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

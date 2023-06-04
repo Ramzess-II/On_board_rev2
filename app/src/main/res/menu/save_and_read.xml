@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/id_reads"
+        android:icon="@drawable/ic_baseline_cloud_download_24"
+        android:title="read"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/id_saved"
+        android:icon="@drawable/ic_baseline_save_24"
+        android:title="save"
+        app:showAsAction="ifRoom"
+         />
+
+</menu>

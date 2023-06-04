@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.on_board_rev2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_ic"
+        android:label="SBV-004"
+        android:roundIcon="@mipmap/ic_launcher_ic_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.On_board_rev2">
+        <activity
+            android:name=".Trailer_activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull"/>
+        <activity
+            android:name=".Info_activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".Net_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".Static_set_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".common_kalib"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".common_setting"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".Password_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".Viev_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".DataBaseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".Save_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".KalibActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".Setting_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board_nofull" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.On_board">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

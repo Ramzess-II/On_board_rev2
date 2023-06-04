@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Trailer_activity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/grey"
+        android:foregroundGravity="center"
+        app:itemIconSize="40dp"
+
+        app:itemIconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/down_menu"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="10"
+            android:text="Номер"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="Примітка"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="18"
+            android:text="№1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_note1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:backgroundTint="@color/blue"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:buttonTint="@color/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="18"
+            android:text="№2"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_note2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:backgroundTint="@color/blue"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:buttonTint="@color/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="18"
+            android:text="№3"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_note3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:backgroundTint="@color/blue"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:buttonTint="@color/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="18"
+            android:text="№4"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_note4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:backgroundTint="@color/blue"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:buttonTint="@color/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="18"
+            android:text="№5"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_note5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:backgroundTint="@color/blue"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:buttonTint="@color/blue" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

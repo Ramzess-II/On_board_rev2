@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">On_board_rev2</string>
+    <string name="chevrons">&gt;T&lt;</string>
+    <string name="chevrons1">&gt;0&lt;</string>
+
+</resources>

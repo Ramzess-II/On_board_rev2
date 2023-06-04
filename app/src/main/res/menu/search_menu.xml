@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- важно!!!android.widget.SearchView-->
+
+    <item
+        android:id="@+id/id_search"
+        android:icon="@drawable/ic_search"
+        android:title="search_viev"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/id_delete"
+        android:icon="@drawable/ic_search"
+        android:title="Видалити базу" />
+
+    <item
+        android:id="@+id/id_csv"
+        android:icon="@drawable/ic_search"
+        android:title="Вивести базу" />
+
+
+</menu>
